@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8e1d5;
+    width: 1519px;
+    margin-left: auto;
+}
+
+#logo {
+    float: left;
+    width: 120px;
+    border-radius: 90px;
+    margin-left: 20px;
+}
+
+#header>h1 {
+    font-style: italic;
+    color: #eda131;
+    font-size: 45px;
+    margin: 20px 174px 29px 20%;
+    text-align: center;
+
+}
+
+/*Stilizarea meniului*/
+
+#nav {
+    text-align: right;
+    padding-right: 70px;
+
+}
+
+.main-menu li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+
+}
+ul, li{
+    font-style: italic;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    
+  }
+
+li>a {
+    text-decoration: none;
+    color: #f8a224;
+   
+}
+
+li>a:hover{
+    color: #da930e85;
+}
+
+.active{
+    background-color: #e9c4a5;
+    border: 1px solid #ffa50094;
+    border-radius: 34px;
+}
+
+
+
+#imagine_coperta>img {
+    width: 100%;
+    height: 400px;
+    opacity: 0.9;
+}
+
+.text>h1 {
+    margin: 57px 107px 0px 122px;
+    padding: 13px 778px 13px 17px;
+    border-left-style: ridge;
+    color: #eda131;
+
+}
+
+p{
+    word-spacing: 5px;
+    line-height: 30px;
+    color: rgb(150 150 132 / 98%);
+    text-transform: initial;
+    text-indent: 16px;
+
+}
+
+.text>p {
+    padding: 23px 31px 34px 68px;
+}
+
+.mid {
+    width: 744px;
+    height: 250px;
+    float: left;
+}
+
+.mid>img {
+    width: 600px;
+    height: 305px;
+    float: left;
+    padding-right: 13px;
+    margin-left: 58px;
+    border-radius: 50px 110px 50px 110px;
+    box-shadow: 23px 9px 22px gray;
+}
+
+h2 {
+    font-style: italic;
+    border-bottom-style: inset;
+    font-weight: 800;
+    color: #eda131;
+    text-align: -webkit-center;
+}
+
+.mid_text1 {
+    width: 45%;
+    float: left;
+    text-indent: 16px;
+    padding-left: 55px;
+    margin-top: 14px;
+}
+
+.mid_text1>h2 {
+    padding-top: 10px;
+}
+
+.mid_text1>p {
+    display: inline-block;
+
+}
+
+.mid_text2 {
+    clear: left;
+    width: 777px;
+    padding: 57px 0px 0px 20px;
+    text-indent: 20px;
+}
+
+.mid_text2>h2 {
+    padding-bottom: 10px;
+}
+
+.mid_text2>p {
+    padding-top: 20px;
+    margin: 0px 28px 0px 19px;
+}
+
+
+.img_right>img {
+    width: 600px;
+    height: 354px;
+    float: right;
+    margin: -378px 45px 0px 0px;
+    padding-left: 26px;
+    border-radius: 130px 79px 126px 79px;
+    box-shadow: -25px 11px 28px gray;
+}
+
+#frame {
+    margin-top: 94px;
+    width: 1513px;
+
+}
+
+#frame>p {
+    text-indent: 19px;
+    margin: 0px 47px 0px 42px;
+
+}
+
+#frame>iframe {
+    width: 817px;
+    height: 341px;
+    margin-left: 313px;
+
+}
+iframe{
+    border: 1px solid #80808000;
+    border-radius: 52px;
+    box-shadow: -20px 15px 28px gray;
+    margin-top: 52px;
+}

@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8e1d5;
+    width: 1513px;
+    margin-left: auto;
+}
+
+#logo {
+    float: left;
+    width: 120px;
+    border-radius: 90px;
+    margin-left: 20px;
+}
+
+#header>h1 {
+    font-style: italic;
+    color: #eda131;
+    font-size: 41px;
+    margin: 20px 174px 35px 20px;
+    text-align: center;
+}
+
+
+                                        /*Stilizarea meniului*/
+
+#nav {
+    text-align: right;
+    padding-right: 70px;
+    border-bottom-style: ridge;
+    cursor: pointer;
+}
+
+.main-menu li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+ul,
+li {
+    font-style: italic;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    margin: -3px 0px 6px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #d17c01db;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #5a390ca5;
+}
+li>a {
+    text-decoration: none;
+    color: #f8a224;
+   
+}
+
+li>a:hover{
+    color: #da930e85;
+}
+
+.active{
+    background-color: #e9c4a5;
+    border: 1px solid #ffa50094;
+    border-radius: 34px;
+}
+
+
+
+
+                                             /*stilizarea paginii*/
+
+
+#title>p {
+    text-align: center;
+    font-size: 19px;
+    padding: 26px;
+    color: rgb(150 150 132 / 98%);
+}
+
+#aside {
+    display: inline-block;
+    margin-top: 26px;
+}
+
+#aside,
+h2 {
+    font-size: 18px;
+    padding: 8px;
+    margin-top: 13px;
+    color: #9c5d0099;
+
+}
+
+.foto {
+    width: 316px;
+    float: left;
+    border: 1px ridge #00000033;
+    border-radius: 11px;
+    overflow: hidden;
+    margin: 0px 28px 0px 53px;
+
+}
+
+.foto_background {
+    height: 279px;
+    background-image: url(../images/fotos/cai.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto1 {
+    width: 316px;
+    float: left;
+    border: 1px ridge #00000033;
+    border-radius: 11px;
+    overflow: hidden;
+    margin: 0px 28px 0px 15px;
+
+}
+
+.foto1_background {
+    height: 279px;
+    background-image: url(../images/fotos/camile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto2 {
+    width: 316px;
+    float: left;
+    border: 1px ridge #00000033;
+    border-radius: 11px;
+    overflow: hidden;
+    margin: 0px 28px 0px 15px;
+
+}
+
+.foto2_background {
+    height: 279px;
+    background-image: url(../images/fotos/delf.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto3 {
+    width: 316px;
+    float: left;
+    border: 1px ridge #00000033;
+    border-radius: 11px;
+    overflow: hidden;
+    margin: 0px 28px 0px 15px;
+
+}
+
+.foto3_background {
+    height: 279px;
+    background-image: url(../images/fotos/stars.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section {
+    margin: 0px 41px 0px 41px;
+    border-bottom-style: ridge;
+    padding-bottom: 45px;
+
+}
+
+p {
+
+    text-indent: 13px;
+    word-spacing: 5px;
+    line-height: 32px;
+    padding-top: 10px;
+    color: rgb(108 108 91 / 98%);
+}
+
+h3 {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #d991297a;
+    padding-left: 46px;
+    color: #c67e15;
+    font-size: 23px;
+    
+}
+
+table {
+    width: 1357px;
+    border-collapse: collapse;
+    color: #776e1e;
+    margin-left: 26px;
+}
+
+th,
+tr,
+td {
+    border: 3px ridge rgb(188 154 9 / 98%);
+    padding: 10px;
+    background-color: #eda13138;
+}
+
+#section2>h2 {
+    text-align: center;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    color: #eda131;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+iframe {
+    width: 1300px;
+    margin: 0px 100px
+}
+#info{
+    margin: 0px 79px 10px 67px;
+}
+
+#info>h3 {
+    text-align: center;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    color: #eda131;
+    text-decoration: underline;
+}
+#list{
+    display: inline-block;
+    margin: 29px 0px 0px 48px;
+    font-style: italic;
+    color: #6f6e5d;
+    line-height: 30px;
+}
+.et>ul,li{
+    font-style: italic;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    color: #6f6e5d;
+}
+
+.et, .bot, .parc, .sp{
+    float: left;
+    margin-right: 51px;
+}
+
+
+

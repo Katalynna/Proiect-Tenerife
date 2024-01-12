@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8e1d5;
+    width: 1513px;
+    margin-left: auto;
+}
+
+#logo {
+    float: left;
+    width: 120px;
+    border-radius: 90px;
+    margin-left: 20px;
+}
+
+#header>h1 {
+    font-style: italic;
+    color: #eda131;
+    font-size: 45px;
+    margin: 20px 174px 29px 20%;
+    text-align: center;
+
+}
+
+                                         /*Stilizarea meniului*/
+
+#nav {
+    color: blue;
+    text-align: right;
+    padding-right: 70px;
+   
+
+}
+
+.main-menu li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+ul,
+li {
+    font-style: italic;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+
+}
+
+li>a {
+    text-decoration: none;
+    color: #f8a224;
+}
+
+li>a:hover {
+    color: #da930e85;
+}
+.active{
+    background-color: #e9c4a5;
+    border: 1px solid #ffa50094;
+    border-radius: 34px;
+}
+
+
+                             /*De aici incepe stilizarea sectiunii : partea de <header>*/
+
+#section>img {
+    width: 101%;
+    height: 403px;
+    
+}
+
+#section>p {
+    padding-top: 10px;
+    word-spacing: 5px;
+    margin-left: 190px;
+    font-style: italic;
+}
+
+                                 /*De aici incepe stilizarea sectiunii : partea de <main>*/
+
+p {
+    word-spacing: 5px;
+    line-height: 30px;
+    color: rgb(150 150 132 / 98%);
+    text-transform: initial;
+    text-indent: 16px;
+    padding: 0px 30px;
+
+
+}
+
+h2 {
+    padding: 5px 0px 5px 43px;
+    text-decoration: underline;
+    color: #eda131;
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+.main_g {
+    padding-top: 14px;
+    border-top-style: ridge;
+    padding-left: 23px;
+}
+
+
+.main_g img {
+    width: 1200px;
+    height: 392px;
+    padding: 10px 10px 0px 0px;
+    border-radius: 50px 110px 50px 110px;
+    box-shadow: 14px -15px 22px #80808091;
+    margin: 21px 0px 0px 141px;
+}
+
+.main_c>img {
+    width: 1200px;
+    height: 392px;
+    padding: 10px 10px 0px 0px;
+    border-radius: 50px 110px 50px 110px;
+    box-shadow: 14px -15px 22px #80808091;
+    margin: 21px 0px 0px 141px;
+}
+
+.main_f>img {
+    width: 1200px;
+    height: 471px;
+    padding: 10px 10px 0px 0px;
+    border-radius: 50px 110px 50px 110px;
+    box-shadow: 14px -15px 22px #80808091;
+    margin: 21px 0px 0px 141px;
+}
+
+.main_t>img {
+    width: 1200px;
+    height: 481px;
+    padding: 10px 10px 0px 0px;
+    border-radius: 50px 110px 50px 110px;
+    box-shadow: 14px -15px 22px #80808091;
+    margin: 21px 0px 0px 141px;
+}
+
+.main_agr>img {
+    width: 1200px;
+    height: 392px;
+    padding: 10px 10px 0px 0px;
+    border-radius: 50px 110px 50px 110px;
+    box-shadow: 14px -15px 22px #80808091;
+    margin: 21px 0px 0px 141px;
+}

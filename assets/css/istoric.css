@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8e1d5;
+    width: 1513px;
+    margin-left: auto;
+}
+
+#logo {
+    float: left;
+    width: 120px;
+    border-radius: 90px;
+    margin-left: 20px;
+}
+
+#header>h1 {
+    font-style: italic;
+    color: #eda131;
+    font-size: 45px;
+    margin: 20px 174px 29px 20%;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+                                         /*Stilizarea meniului*/
+
+#nav {
+    text-align: right;
+    padding-right: 70px;
+
+
+}
+
+.main-menu li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+ul,
+li {
+    font-style: italic;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+
+}
+
+li>a {
+    text-decoration: none;
+    color: #f8a224
+}
+
+li>a:hover {
+    color: #da930e85;
+}
+
+.active {
+    background-color: #e9c4a5;
+    border: 1px solid #ffa50094;
+    border-radius: 34px;
+}
+
+                                        /*Stilizarea sectiunii 1*/
+
+
+.main_img img {
+    width: 101%;
+    height: 403px;
+
+}
+
+
+
+.main_text {
+    display: inline-block;
+    font-size: 22px;
+    line-height: 35px;
+    height: 147px;
+    padding: 0px 33px;
+    margin: -78px 103px 0px 257px;
+    background-color: white;
+    border-radius: 22px;
+}
+
+                                     /* Stilizarea sectiunii 2*/
+
+.p1 {
+    width: 100%;
+}
+
+p {
+    word-spacing: 5px;
+    line-height: 30px;
+    color: rgb(150 150 132 / 98%);
+    text-transform: initial;
+}
+
+
+h1 {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 800;
+    color: #eda131;
+    text-align: -webkit-center;
+    margin-bottom: 34px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #d991297a;
+}
+
+#section2 {
+    margin: 59px 0px 0px 60px;
+    padding-right: 25px;
+    float: left;
+}
+
+#section2 p {
+    width: 1070px;
+    text-indent: 15px;
+
+}
+
+aside {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 105px;
+    margin-bottom: 0px;
+
+}
+
+                                  /* Stilizarea pozelor din dreptul paragrafelor*/
+.teide,
+.guansi,
+.foto,
+.foto1 {
+    width: 295px;
+    border: 1px solid #b6760da6;
+    border-radius: 22px;
+    overflow: hidden;
+    margin-bottom: 200px;
+
+}
+
+.teide_background {
+    height: 242px;
+    background-image: url(../images/fotos/roca\ vulcanica.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.teide_text,
+.guansi_text,
+.foto_text,
+.foto1_text {
+    font-style: italic;
+    padding: 15px 4px 10px 10px;
+    text-indent: 7px;
+}
+
+.teide a {
+    text-decoration: none;
+}
+
+.guansi_background {
+    height: 311px;
+    background-image: url(../images/fotos/guansii.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto_background {
+    height: 311px;
+    background-image: url(../images/fotos/AlonsoFernandez.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto a {
+    text-decoration: none;
+}
+
+.foto1_background {
+    height: 311px;
+    background-image: url(../images/fotos/eruptie.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto1 {
+    width: 295px;
+    border: 1px solid #b6760da6;
+    border-radius: 22px;
+    overflow: hidden;
+    margin-bottom: 200px;
+}
+
+
+
+#footer {
+    clear: both
+}
+
+#link {
+    margin-left: 10px;
+}
+
+#footer>.title>h1 {
+    margin: -102px 66px 0px 66px;
+    padding-top: 45px;
+    border-top-style: ridge;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #d991297a;
+}
+
+
+#btn {
+    float: left;
+    margin: 54px 25px 41px 148px;
+
+
+
+}
+
+#btn1 {
+    display: inline-block;
+    margin: 45px 38px 0px 74px;
+    padding-left: 280px;
+    margin-top: 54px;
+}
+
+button {
+    background-color: #f8a224b0;
+    padding: 15px;
+    border: none;
+    border-radius: 24px;
+    font-size: 19px;
+}
+
+a:-webkit-any-link {
+
+    cursor: pointer;
+    text-decoration: none;
+    
+}
