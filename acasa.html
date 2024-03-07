@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Proiect Tenerife, modulul HTML si CSS Intermediate " />
     <meta name="keywords" content="website, site, CSS, HTML, proiect" />
-    <title>Exploreaza Tenerife, paradis insular</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <title>Exploreaza Tenerife</title>
     <link rel="stylesheet" href="assets/css/acasa.css">
 
     <!-- favicon-->
@@ -17,18 +18,31 @@
     <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- icon footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <div class="gotopbtn">
+        <a href=""><i class="fa-solid fa-circle-arrow-up"></i></a>
+    </div>
+    
     <div id="header">
         <div id="logo">
             <img src="./assets/images/fotos/logo.jpeg" alt="Logo Tenerife" id="logo">
         </div>
-        <h1> Tenerife: Bijuteria Atlanticului</h1>
+        <h1 class="fade-in"> Tenerife: Bijuteria Atlanticului</h1>
         <div id="nav">
             <ul class="main-menu">
                 <li class="active"><a href="acasa.html">Acasa</a></li>
-                <li><a href="descopera.html">Descopera</a></li>
+                <li>
+                    <a href="descopera.html">Descopera</a>
+                    <ul class="submenu">
+                        <li><a href="./submeniu/plajeleidilice.html">Plajele Idilice</a></li>
+                        <li><a href="./submeniu/flora.html">Flora</a></li>
+                    </ul>
+                </li>
                 <li><a href="istoric.html">Istoric</a></li>
                 <li><a href="curiozitati.html">Curiozitati</a></li>
                 <li><a href="activitati.html">Activitati</a></li>
@@ -43,7 +57,7 @@
                 <img src="./assets/images/fotos/background.jpg" alt="Tenerife">
             </div>
             <div class="text">
-                <h1> TENERIFE
+                <h1 > TENERIFE
                     <br>
                     FRUMUSETEA NATURII
                 </h1>
@@ -91,7 +105,7 @@
 
                     Tenerife încă mai păstrează frumoase cartiere istorice de mare valoare artistică, în care vă puteți
                     plimba relaxat, muzee și sate fermecătoare pline de tradiții locale, unde puteți întâlni localnici
-                    și discuta cu ei
+                    și discuta cu ei.
                 </p>
 
             </div>
@@ -100,11 +114,8 @@
             </div>
         </div>
         <div id="frame">
-            <p>Dar Tenerife este perfectă și pentru odihnă și deconectare de la stres. Ca destinație turistică
-                consacrată, dispune de o gamă extraordinară de cazare, de la cele mai exclusiviste opțiuni până la
-                altele mai modeste, unde te poți relaxa înconjurat de tot confortul și serviciile.</p>
-
-
+            <h2>Explorand Tenerife: O calatorie virtuala prin peisaje spectaculoase</h2>
+            
             <iframe width="560" height="315" src="https://www.youtube.com/embed/PP4BhokhH8Q?si=vTtcLdSyyP0dQWVK"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -112,15 +123,23 @@
 
         </div>
     </main>
+    <div id="footer">
+        <div class="explore">
+            <h1>Exploreaza Tenerife</h1>
+            <p>
+                Exploreaza Tenerife este un website care îți oferă informații utile despre destinația turistică Tenerife din Insulele Canare. Aici vei găsi informații despre locuri de vizitat, activități de petrecere a timpului liber, restaurante și hoteluri recomandate, precum și sfaturi practice pentru călătoria ta în această destinație. Indiferent dacă ești în căutarea de plaje frumoase, experiențe culturale sau aventuri în natură, website-ul <strong style="color: #eda131;">Exploreaza Tenerife </strong>îți va fi de ajutor în planificarea vacanței tale. 
+            </p>
 
-
-
-
-
-
-
-
-
+            <h3>Alatura-te comunitatii noastre pe retelele sociale! <a href=""><i class="fa-solid fa-star"></i></a> Descopera mai multe si urmareste-ne pentru actualizari exclusive si continut captivant <a href=""><i class="fa-regular fa-bell"></i></a></h3>
+            <div class="links">
+                <a href="https://www.youtube.com/watch?v=zk3amFTzdnQ&t=30s"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/travelling_adventure_goodvibes/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/MarinVirginia1991"> <i class="fa-brands fa-facebook"></i> </a>
+               
+            </div>
+        </div>
+       
+    </div>  <!--Footer-->
 </body>
 
 </html>

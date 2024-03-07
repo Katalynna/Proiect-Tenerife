@@ -17,20 +17,34 @@
     <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- icon footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <div class="gotopbtn">
+        <a href=""><i class="fa-solid fa-circle-arrow-up"></i></a>
+    </div>
     <div id="header">
         <div id="logo">
             <img src="./assets/images/fotos/logo.jpeg" alt="Logo Tenerife" id="logo">
         </div>
-        <h1> Tenerife: Acolo unde curiozitatile se impletesc cu peisaje uimitoare</h1>
+        <h1 class="fade-in"> Tenerife: Acolo unde curiozitatile se impletesc cu peisaje uimitoare</h1>
         <div id="nav">
             <ul class="main-menu">
-                <li><a href="acasa.html">Acasa</a></li>
-                <li><a href="descopera.html">Descopera</a></li>
+                <li class="active"><a href="acasa.html">Acasa</a></li>
+                <li>
+                    <a href="descopera.html">Descopera</a>
+                    <ul class="submenu">
+                        <li><a href="./submeniu/plajeleidilice.html">Plajele Idilice</a></li>
+                        <li><a href="./submeniu/flora.html">Flora</a></li>
+                    </ul>
+                </li>
                 <li><a href="istoric.html">Istoric</a></li>
-                <li class="active"><a href="curiozitati.html">Curiozitati</a></li>
+                <li><a href="curiozitati.html">Curiozitati</a></li>
                 <li><a href="activitati.html">Activitati</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -40,11 +54,12 @@
     <div id="main">
         <div id="main_top">
             <p>
-                Insulele Canare, insulele norocoase, sunt un arhipelag unic în lume. Este un loc incredibil pentru a
-                trăi și a petrece vacanțe. Fiecare insulă păstrează o serie de curiozități puțin cunoscute.
+                Tenerife, insula minunilor! Descoperiti o lume plina de curiozitati fascinante, de la vulcani adormiti
+                la pesteri misterioase si plaje spectaculoase. In fiecare colt al insulei, va asteapta surprize
+                neasteptate si experiente memorabile.
             </p>
         </div>
-        <div id="mun">
+        <div id="curiosities">
             <img src="./assets/images/fotos/park.jpg" alt="Tenerife">
         </div>
         <div id="teide">
@@ -82,7 +97,7 @@
                 Smyth observa timp de două luni Luna și planetele la sfârșitul secolului al XIX-lea.
             </p>
         </div>
-        <div id="plj">
+        <div id="curiosities">
             <img src="./assets/images/fotos/plaje.jpg" alt="Tenerife sud">
         </div>
         <div id="agt">
@@ -94,8 +109,11 @@
                 sunt plasate în peisajele insulelor.
             </p>
         </div>
+        <div id="curiosities">
+            <img src="./assets/images/fotos/Agata Christies.jpg" alt="Agatha Christie">
+        </div>
         <div id="vnt">
-            <h3>Peștera vântului</h3>
+            <h3>Peștera Vântului</h3>
             <p>
                 Unul dintre cele mai mari zece tuburi vulcanice din lume se află în Tenerife. In municipiul Icod de los
                 Vinos se
@@ -104,8 +122,8 @@
                 exceptionale.
             </p>
         </div>
-        <div id="pas">
-            <img src="./assets/images/fotos/pasare.jpg" alt="Pasari exotice">
+        <div id="curiosities">
+            <img src="./assets/images/fotos/Pestera vantului.jpg" alt="Pasari exotice">
         </div>
         <div id="anag_lag">
             <h3>Masivul Anaga</h3>
@@ -123,7 +141,9 @@
                 treptat.
             </p>
         </div>
+
         <div id="mun">
+            <img src="./assets/images/fotos/Anaga.jpg" alt="Anaga Tenerife">
             <img src="./assets/images/fotos/munte2.jpg" alt="Muntii din Tenerife">
         </div>
 
@@ -132,8 +152,8 @@
 
         <div id="lista">
             <ul>
-                <li>Aproape jumătate din insulă este protejată de parcuri naționale.</li>
-                <li> Carnavalul din Tenerife este al doilea ca important după cel de la Rio de Janeiro.</li>
+                <li> Aproape jumătate din insulă este protejată de parcuri naționale.</li>
+                <li>Carnavalul din Tenerife este al doilea ca important după cel de la Rio de Janeiro.</li>
                 <li>Este cea mai mare insulă din Spania și durează doar 3,5 ore pentru a o ocoli.</li>
                 <li>Câteva dintre filmele care au fost filmate în Tenerife sunt: "Jason Bourne”, „Fast and Furious 6” și
                     „Clash of the Titans”.</li>
@@ -150,18 +170,40 @@
 
             </ul>
         </div>
-        <div id="exp">
+    </div>
+    <div id="footer">
+        <div class="explore">
+            <h1>Exploreaza Tenerife</h1>
             <p>
-                În concluzie, Tenerife este o destinație care captivează inimile tuturor celor care vizitează. De la
-                magnificul său munte Teide până la plajele sale aurii și orașele vibrante, această insulă oferă cu
-                adevărat un gust de paradis. Fie cauți peisaje naturale uluitoare, o experiență culturală bogată sau pur
-                și simplu o șansă de a te relaxa și de a te bucura de soare, Tenerife are totul.
+                Tenerife este o insulă plină de curiozități care te vor fascina. De exemplu, Parcul Național Teide
+                găzduiește cel mai înalt vârf din Spania și un vulcan activ, Teide, care este și cel mai mare
+                stratovulcan din lume.
+            <p>De asemenea, insula este renumită pentru plajele sale vulcanice, precum Playa de las Teresitas, care se
+                întinde pe mai bine de un kilometru și este acoperită cu nisip adus din Sahara.
             </p>
-            <p>
-                Citeste mai multe despre : <a href="https://www.agathachristie.com/">Agatha Christie</a> <a
-                    href="https://whc.unesco.org/en/list/1258/">Parcul National Teide</a> <a
-                    href="https://carnavaldetenerife.com/history-of-carnival/"> Carnavalul din Tenerife</a>
+            <p> Nu în ultimul rând, Tenerife este locul unde poți admira delfinii și balenele în sălbăticie, grație
+                apelor bogate în nutrienți ale Atlanticului de Nord. Acestea sunt doar câteva dintre curiozitățile
+                fascinante care te așteaptă în Tenerife!
             </p>
+            <div id="exp">
+                <p>
+                    Citeste mai multe despre : <a href="https://www.agathachristie.com/">Agatha Christie</a>
+                     <a href="https://whc.unesco.org/en/list/1258/">Parcul National Teide</a>
+                     <a href="https://carnavaldetenerife.com/history-of-carnival/"> Carnavalul din Tenerife</a>
+                </p>
+            </div>
+
+            <h3>Alatura-te comunitatii noastre pe retelele sociale! <a href=""><i class="fa-solid fa-star"></i></a>
+                Descopera mai multe si urmareste-ne pentru actualizari exclusive si continut captivant <a href=""><i
+                        class="fa-regular fa-bell"></i></a></h3>
+            <div class="links">
+                <a href="https://www.youtube.com/watch?v=zk3amFTzdnQ&t=30s"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/travelling_adventure_goodvibes/"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/MarinVirginia1991"> <i class="fa-brands fa-facebook"></i> </a>
+
+            </div>
         </div>
+
     </div>
 </body>

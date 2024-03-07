@@ -5,11 +5,33 @@ body {
     margin-left: auto;
 }
 
+.gotopbtn{
+    position: fixed;
+    bottom: 40px;
+    right: 41px;
+    z-index: 9;
+  
+}
+.gotopbtn a{
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+.fa-circle-arrow-up{
+    font-size: 30px;
+    color: #eda131;
+}
+
+
 #logo {
     float: left;
     width: 120px;
     border-radius: 90px;
     margin-left: 20px;
+}
+
+#header {
+    flex-basis: 100%;
 }
 
 #header>h1 {
@@ -20,14 +42,34 @@ body {
     text-align: center;
 }
 
+                                     /*Titlul animat*/
 
-                                        /*Stilizarea meniului*/
+@keyframes fade-in {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 3s;
+    animation-direction: reverse;
+    animation-timing-function: ease-out;
+
+}
+
+
+                                    /*Stilizarea meniului*/
 
 #nav {
     text-align: right;
     padding-right: 70px;
-    border-bottom-style: ridge;
-    cursor: pointer;
+
+
 }
 
 .main-menu li {
@@ -39,41 +81,88 @@ body {
 
 ul,
 li {
+    display: inline-block;
+    position: relative;
     font-style: italic;
     word-spacing: 5px;
     letter-spacing: 1px;
-    margin: -3px 0px 6px 0px;
+
 }
 
-a {
-    text-decoration: none;
-    color: #d17c01db;
-    cursor: pointer;
-}
-
-a:hover {
-    color: #5a390ca5;
-}
-li>a {
+ul li>a {
+    display: block;
     text-decoration: none;
     color: #f8a224;
-   
+
+
 }
 
-li>a:hover{
+li>a:link,
+li>a:visited {
+    text-decoration: none;
+    color: #a06103ce;
+    ;
+}
+
+
+li>a:hover {
     color: #da930e85;
-}
-
-.active{
+    transition: 200ms steps(4, end), 1s ease-out font-size, 0.5s ease-in background-color;
     background-color: #e9c4a5;
     border: 1px solid #ffa50094;
-    border-radius: 34px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+li>a:active {
+    color: #f18007;
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: #eda131;
+    text-decoration-style: wavy;
+}
+                                         /* Stilizarea meniului derulant*/
+
+.submenu{
+    border-radius: 21px;
+    background-color: #e8e1d5;
+    border: 1px solid #ffa500ab;
+    margin-top: 10px;
+    width: 110px;
+    text-align: center;
+   
+}
+ul li ul{
+    background-color:  #eda13157;
+    position: absolute;
+    display: none;
+    z-index: 2;
+}
+
+ul li:hover ul{
+    display: block;
+    text-align: center;
+    padding: 8px;
+}
+
+ul li ul li {
+    display: block;
+}
+
+
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: #eda131;
+    text-decoration-style: wavy;
 }
 
 
 
 
-                                             /*stilizarea paginii*/
+                                         /*stilizarea paginii*/
 
 
 #title>p {
@@ -192,7 +281,7 @@ h3 {
     padding-left: 46px;
     color: #c67e15;
     font-size: 23px;
-    
+
 }
 
 table {
@@ -223,7 +312,8 @@ iframe {
     width: 1300px;
     margin: 0px 100px
 }
-#info{
+
+#info {
     margin: 0px 79px 10px 67px;
 }
 
@@ -234,24 +324,27 @@ iframe {
     color: #eda131;
     text-decoration: underline;
 }
-#list{
+
+#list {
     display: inline-block;
     margin: 29px 0px 0px 48px;
     font-style: italic;
     color: #6f6e5d;
     line-height: 30px;
 }
-.et>ul,li{
+
+.et>ul,
+li {
     font-style: italic;
     word-spacing: 5px;
     letter-spacing: 1px;
     color: #6f6e5d;
 }
 
-.et, .bot, .parc, .sp{
+.et,
+.bot,
+.parc,
+.sp {
     float: left;
     margin-right: 51px;
 }
-
-
-

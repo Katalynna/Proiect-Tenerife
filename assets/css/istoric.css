@@ -4,12 +4,32 @@ body {
     width: 1513px;
     margin-left: auto;
 }
+.gotopbtn{
+    position: fixed;
+    bottom: 40px;
+    right: 41px;
+    z-index: 9;
+  
+}
+.gotopbtn a{
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+.fa-circle-arrow-up{
+    font-size: 30px;
+    color: #eda131;
+}
 
 #logo {
     float: left;
     width: 120px;
     border-radius: 90px;
     margin-left: 20px;
+}
+
+#header {
+    flex-basis: 100%;
 }
 
 #header>h1 {
@@ -20,10 +40,30 @@ body {
     text-align: center;
     text-decoration: none;
 
-
 }
 
-                                         /*Stilizarea meniului*/
+/*Titlul animat*/
+
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 3s;
+    animation-direction: reverse;
+    animation-timing-function: ease-out;
+
+}
+@keyframes fade-in {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+/*Stilizarea meniului*/
 
 #nav {
     text-align: right;
@@ -41,31 +81,89 @@ body {
 
 ul,
 li {
+    display: inline-block;
+    position: relative;
     font-style: italic;
     word-spacing: 5px;
     letter-spacing: 1px;
 
 }
 
-li>a {
+ul li>a {
+    display: block;
     text-decoration: none;
-    color: #f8a224
+    color: #f8a224;
+
+
 }
+
+li>a:link,
+li>a:visited {
+    text-decoration: none;
+    color: #a06103ce;
+    ;
+}
+
 
 li>a:hover {
     color: #da930e85;
+    transition: 200ms steps(4, end), 1s ease-out font-size, 0.5s ease-in background-color;
+    background-color: #e9c4a5;
+    border: 1px solid #ffa50094;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+li>a:active {
+    color: #f18007;
 }
 
 .active {
-    background-color: #e9c4a5;
-    border: 1px solid #ffa50094;
-    border-radius: 34px;
+    text-decoration: underline;
+    text-decoration-color: #eda131;
+    text-decoration-style: line;
+}
+                                         /* Stilizarea meniului derulant*/
+
+.submenu{
+    border-radius: 21px;
+    background-color: #e8e1d5;
+    border: 1px solid #ffa500ab;
+    margin-top: 10px;
+    width: 110px;
+    text-align: center;
+   
+}
+ul li ul{
+    background-color:  #eda13157;
+    position: absolute;
+    display: none;
+    z-index: 2;
 }
 
-                                        /*Stilizarea sectiunii 1*/
+ul li:hover ul{
+    display: block;
+    text-align: center;
+    padding: 8px;
+}
+
+ul li ul li {
+    display: block;
+}
+
+
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: #eda131;
+    text-decoration-style: wavy;
+}
+
+/*Stilizarea sectiunii 1*/
 
 
 .main_img img {
+
     width: 101%;
     height: 403px;
 
@@ -84,11 +182,9 @@ li>a:hover {
     border-radius: 22px;
 }
 
-                                     /* Stilizarea sectiunii 2*/
+/* Stilizarea sectiunii 2*/
 
-.p1 {
-    width: 100%;
-}
+
 
 p {
     word-spacing: 5px;
@@ -104,7 +200,8 @@ h1 {
     font-weight: 800;
     color: #eda131;
     text-align: -webkit-center;
-    margin-bottom: 34px;
+    margin-bottom: 44px;
+    margin-top: 40px;
     text-decoration: underline;
     text-decoration-style: solid;
     text-decoration-color: #d991297a;
@@ -122,15 +219,28 @@ h1 {
 
 }
 
+#section2 p:first-of-type:first-letter, 
+.parag::first-letter{
+    color: #edab7b;
+    font-size: 61px;
+    font-weight: bold;
+    line-height: 66px;
+    margin: -27px -13px -15px 0;
+    float: left;
+    display: block;
+}
+
+
 aside {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     margin-left: 10px;
     margin-top: 105px;
     margin-bottom: 0px;
 
 }
 
-                                  /* Stilizarea pozelor din dreptul paragrafelor*/
+/* Stilizarea pozelor din dreptul paragrafelor*/
 .teide,
 .guansi,
 .foto,
@@ -139,7 +249,7 @@ aside {
     border: 1px solid #b6760da6;
     border-radius: 22px;
     overflow: hidden;
-    margin-bottom: 200px;
+    margin-bottom: 179px;
 
 }
 
@@ -203,36 +313,131 @@ aside {
 
 
 #footer {
-    clear: both
+    clear: both;
+    margin: 55px 63px 0 63px;
 }
 
 #link {
     margin-left: 10px;
 }
 
-#footer>.title>h1 {
-    margin: -102px 66px 0px 66px;
-    padding-top: 45px;
-    border-top-style: ridge;
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-color: #d991297a;
+.veg {
+    padding-top: 22px;
+    border-top: 1px solid #eda131;
+    text-align: center;
+    
 }
 
-
-#btn {
-    float: left;
-    margin: 54px 25px 41px 148px;
-
-
+.veg h1 {
+    color: #eda131;
+    padding-bottom: 30px;
 
 }
 
-#btn1 {
+.veg>p {
+    text-indent: 10px;
+    font-style: italic;
+    font-size: 20px;
+}
+.button {
     display: inline-block;
-    margin: 45px 38px 0px 74px;
-    padding-left: 280px;
-    margin-top: 54px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px 14px;
+    border: 1px solid #af7407;
+    border-radius: 44px;
+    background: #f0b103;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f0b103), to(#e3dbcc));
+    background: -moz-linear-gradient(top, #f0b103, #e3dbcc);
+    background: linear-gradient(to bottom, #f0b103, #e3dbcc);
+    -webkit-box-shadow: #948e7c 19px 4px 40px 0px;
+    -moz-box-shadow: #948e7c 19px 4px 40px 0px;
+    box-shadow: #948e7c 19px 4px 40px 0px;
+    text-shadow: #7d5305 2px 3px 2px;
+    font: italic normal bold 19px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    border: 1px solid #faa60a;
+    background: #dd9104;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffb004), to(#e6c20e));
+    background: -moz-linear-gradient(top, #ffb004, #fffff5);
+    background: linear-gradient(to bottom, #ffb004, #fffff5);
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:active {
+    background: #906a02;
+    background: -webkit-gradient(linear, left top, left bottom, from(#906a02), to(#e3dbcc));
+    background: -moz-linear-gradient(top, #906a02, #e3dbcc);
+    background: linear-gradient(to bottom, #906a02, #e3dbcc);
+}
+.button:after{
+    content:  "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 -4px -6px 4px;
+    position: relative;
+    top: 6px;
+    left: 0px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEyUlEQVRIia2VWWxUVRjHf3eZdtpO22mBllLoxmJlqYQoYGgCQRQTECsEeYFEARMNlAhqDMENH/TBGE0gMUaECIlRHwgoS9WoUJo2NlBDF1onZeje6Uw7nX3mTu/c48O9YG3ApAlf8uXmnnvO//8t/3M/hWlazQIKquew6tFcZsgpYiMaieli/K9dfb3wlBi+JoT7oghc/VhrO/78tR92pO8usmN/KAS/HJjzvYgOCBHuFyIyIETMI8RQvXCfeKHz8/VUT90vT5tBGJAMgBaExDjEfJDmpHzrR5V73//gtzPbM3dP3q5On0CAFoKUAYi7iwBkLdyQtm2/8WUg/KGnto5LAMp08Xc9JrbPd0aWoI1Cei4YE6AnQI+DHsfmnCfPzY48/WfT3yf7o8SVqpk41hazoMPP2KSQHmhbyie2Z/lal0Q66pHddaTl54M9zyRIxUGPkT27JGt2oDH1bUvid+V4jXTgyOFd5/aunbXnpRXyyo0lodxkTES7/Izfj7C6lLU5dpbaVGyJhEbK3UxmUTGoGRaBpVrNO+/E5f4vpDPbOLrzwL73cJSaeMkAEz630d/f2xMaHmh0uwd/PtksGi9247Y48iWJssoZVL7yOC9vWsj6ueVFcmb1q2Ck7oWUHGlnY+3ZZWpcI8W4G2QHYABgyyuRK/LLKlhuVCxPBXdufrHPGBga6o74hhvaXb5fv2qg4UovLYfquNQf5N23czyHMrV+kDJMAkOQZldZMIsStd2HSwT6kLJLTAkKARIgC9MlSJsxR64oKF6EZCyqWh/avXWHx2i50Va35mho02dNHH12mVj3jDG2AinLjNEAxpqRFFS1cYCu6JgPR8G4maIEKMLUlxDWTbHylsx3u+yX08bClZgyD8m5GV0o2gr0pAnu7wStB0kGtcPDgNcfCjgSY04QoP5X22BlJARIAjHswts0QiiKDhjvPMXilasLt2AETckGu0HzgwQTExhqPEVgNJjoqwh0OsmaCZL8L6g0CVykSN3uwdMSY0gjdPomn5zYxfqazXmncgrtDjS3eavRIR1iXhgKM6oC+ngMN4mhKgwPZGRBRibINpClSeVJQaFE1nIbxojwH1ktvzW/PG2RrEzAhMvsXxpmaTXovUOgqR+3CuAJcwuFGhQDCIMeNmsvySDLoEiAhJItcDph1RJRhpgAkTT5JauxuvlMtEOrl/pQwsyA1hFumvqc6oblVjsVTGLZAhWWG0DK/K63wdAg+ulWjgGGCnD1Dq64Bhk5FogNSFqHHdaaOoVkKkES9Gbw3oYLvZy+dIt6rCO0DTHgjRAoLcKJCgTBfwMMA/LKQFkGFGDWWJ7kmPXmDkQaYFyDa16uHPyRw1aIJkEyRcAXpK9UxSmGwdcJgwYRRUKN9mDPvA2OYkh/BOTZgN2stz4KcRcE+yApMC70cPaN8xw0DLwW/b15oAfH6DY6qPL6wK3jefMyr/mjxGrXUPtkMesK/TiUZrDZQVFNBaNDJIlxw8+tr69z7Kc2vgNCTLJ7A2cwTvtIgK1/RWnfd449PaNcB4z9Z2nItrP4uaVsWFnCE7McFNgU1HCSgMuH63wbf3QN0wiMcvdndj/bUsXqT2v4JjOdigduMovjAHKATKY5EWXMNj5U+wcb0TIr9nRDzwAAAABJRU5ErkJggg==") no-repeat left center transparent;
+    background-size: 100% 100%;
+}
+
+
+.fa-star,
+.fa-bell {
+    color: #ffaa2e;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 20px;
+    justify-content: center;
+    padding-bottom: 30px;
+
+}
+
+.fa-youtube {
+    color: red;
+    margin-right: 50px;
+    font-size: 37px;
+
+}
+
+.fa-instagram {
+    margin-right: 50px;
+    font-size: 37px;
+    border-radius: 8px;
+    background: #dca66c;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc279a 50%, #cc2366 75%, #bd8a09 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+
+}
+
+.fa-facebook {
+    color: blue;
+    margin-right: 20px;
+    font-size: 37px;
+}
+h3{
+    color: #d68308;
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0 30px 0;
 }
 
 button {
@@ -241,11 +446,19 @@ button {
     border: none;
     border-radius: 24px;
     font-size: 19px;
+    margin: 10px 300px 0px 300px;
 }
 
-a:-webkit-any-link {
+a[href^="https://en.wikipedia.org"] {
 
     cursor: pointer;
     text-decoration: none;
-    
+    color: #9f6a1c
+}
+
+a[href^="https://www.princess-hotels.com"] {
+
+    cursor: pointer;
+    text-decoration: none;
+    color: #9f6a1c
 }

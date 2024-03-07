@@ -4,12 +4,32 @@ body {
     width: 1513px;
     margin-left: auto;
 }
+.gotopbtn{
+    position: fixed;
+    bottom: 40px;
+    right: 41px;
+    z-index: 9;
+  
+}
+.gotopbtn a{
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+.fa-circle-arrow-up{
+    font-size: 30px;
+    color: #eda131;
+}
 
 #logo {
     float: left;
     width: 120px;
     border-radius: 90px;
     margin-left: 20px;
+}
+
+#header {
+    flex-basis: 100%;
 }
 
 #header>h1 {
@@ -21,13 +41,32 @@ body {
 
 }
 
-                                         /*Stilizarea meniului*/
+/*Titlul animat*/
+
+@keyframes fade-in {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 3s;
+    animation-direction: reverse;
+    animation-timing-function: ease-out;
+
+}
+
+/*Stilizarea meniului*/
 
 #nav {
-    color: blue;
     text-align: right;
     padding-right: 70px;
-   
+
 
 }
 
@@ -40,33 +79,91 @@ body {
 
 ul,
 li {
+    display: inline-block;
+    position: relative;
     font-style: italic;
     word-spacing: 5px;
     letter-spacing: 1px;
 
 }
 
-li>a {
+ul li>a {
+    display: block;
     text-decoration: none;
     color: #f8a224;
+
+
 }
+
+li>a:link,
+li>a:visited {
+    text-decoration: none;
+    color: #a06103ce;
+    ;
+}
+
 
 li>a:hover {
     color: #da930e85;
-}
-.active{
+    transition: 200ms steps(4, end), 1s ease-out font-size, 0.5s ease-in background-color;
     background-color: #e9c4a5;
     border: 1px solid #ffa50094;
-    border-radius: 34px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+li>a:active {
+    color: #f18007;
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: #eda131;
+    text-decoration-style: wavy;
+}
+                                         /* Stilizarea meniului derulant*/
+
+.submenu{
+    border-radius: 21px;
+    background-color: #e8e1d5;
+    border: 1px solid #ffa500ab;
+    margin-top: 10px;
+    width: 110px;
+    text-align: center;
+   
+}
+ul li ul{
+    background-color:  #eda13157;
+    position: absolute;
+    display: none;
+    z-index: 2;
+}
+
+ul li:hover ul{
+    display: block;
+    text-align: center;
+    padding: 8px;
+}
+
+ul li ul li {
+    display: block;
 }
 
 
-                             /*De aici incepe stilizarea sectiunii : partea de <header>*/
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: #eda131;
+    text-decoration-style: wavy;
+}
+
+
+/*De aici incepe stilizarea sectiunii : partea de <header>*/
 
 #section>img {
     width: 101%;
     height: 403px;
-    
+
 }
 
 #section>p {
@@ -76,7 +173,7 @@ li>a:hover {
     font-style: italic;
 }
 
-                                 /*De aici incepe stilizarea sectiunii : partea de <main>*/
+/*De aici incepe stilizarea sectiunii : partea de <main>*/
 
 p {
     word-spacing: 5px;
@@ -90,11 +187,27 @@ p {
 }
 
 h2 {
+    
     padding: 5px 0px 5px 43px;
     text-decoration: underline;
     color: #eda131;
     font-size: 24px;
-    margin-bottom: 0px;
+    margin-bottom: 0px;   
+}
+
+h2:hover{
+    animation: miscare 3s linear forwards;
+    cursor: pointer;
+}
+
+@keyframes miscare {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+       transform: translateX(200px);
+       
+    }
 }
 
 .main_g {
@@ -147,4 +260,75 @@ h2 {
     border-radius: 50px 110px 50px 110px;
     box-shadow: 14px -15px 22px #80808091;
     margin: 21px 0px 0px 141px;
+}
+
+#footer{
+    margin: 55px 63px 0 63px;
+}
+
+.explore {
+    padding-top: 22px;
+    border-top: 1px solid #eda131;
+    text-align: center;
+
+
+}
+
+.explore h1 {
+    color: #eda131;
+    padding-bottom: 30px;
+
+}
+
+.explore>p {
+    text-indent: 10px;
+    font-style: italic;
+    font-size: 20px;
+
+}
+h3{
+    color: #da8b15;
+    font-size: 19px;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #da8b1573;
+}
+
+.fa-star,
+.fa-bell {
+    color: #ffaa2e;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 20px;
+    justify-content: center;
+    padding-bottom: 30px;
+    
+}
+
+.fa-youtube {
+    color: red;
+    margin-right: 50px;
+    font-size: 37px;
+    
+}
+
+.fa-instagram {
+    margin-right: 50px;
+    font-size: 37px;
+    border-radius: 8px;
+    background: #dca66c;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc279a 50%, #cc2366 75%, #bd8a09 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+
+}
+
+.fa-facebook {
+    color: blue;
+    margin-right: 20px;
+    font-size: 37px;
 }
