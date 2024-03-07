@@ -17,19 +17,32 @@
     <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+       <!-- icon footer-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <div class="gotopbtn">
+        <a href=""><i class="fa-solid fa-circle-arrow-up"></i></a>
+    </div>
     <div id="header">
         <div id="logo">
             <img src="./assets/images/fotos/logo.jpeg" alt="Logo Tenerife" id="logo">
         </div>
-        <h1> Istoria fascinanta a insulei Tenerife</h1>
+        <h1 class="fade-in"> Istoria fascinanta a insulei Tenerife</h1>
         <div id="nav">
             <ul class="main-menu">
-                <li><a href="acasa.html">Acasa</a></li>
-                <li><a href="descopera.html">Descopera</a></li>
-                <li class="active"><a href="istoric.html">Istoric</a></li>
+                <li class="active"><a href="acasa.html">Acasa</a></li>
+                <li>
+                    <a href="descopera.html">Descopera</a>
+                    <ul class="submenu">
+                        <li><a href="./submeniu/plajeleidilice.html">Plajele Idilice</a></li>
+                        <li><a href="./submeniu/flora.html">Flora</a></li>
+                        <li><a href="">Turism</a></li>
+                    </ul>
+                </li>
+                <li><a href="istoric.html">Istoric</a></li>
                 <li><a href="curiozitati.html">Curiozitati</a></li>
                 <li><a href="activitati.html">Activitati</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -40,7 +53,7 @@
     <div id="section1">
         <div id="main">
             <div class="main_img">
-                <img src="./assets/images/fotos/tun.jpeg" alt="Apararea din Puerto de la Cruz din Tenerife">
+                <img src="./assets/images/fotos/tun.jpg" alt="Apararea din Puerto de la Cruz din Tenerife">
 
             </div>
 
@@ -58,7 +71,7 @@
     <div id="section2">
         <h1>Origine vulcanică</h1>
         <p>
-            Cu aproximativ 25 de milioane de ani în urmă, o serie de erupții de lavă pe podeaua subacvatică au făcut ca
+            Aproximativ 25 de milioane de ani în urmă, o serie de erupții de lavă pe podeaua subacvatică au făcut ca
             magma din interiorul Pământului să apară deasupra nivelului mării, dând naștere la șapte noi insule la
             câțiva kilometri de coasta Africii de Vest. Insulele Canare tocmai se născuseră.
         </p>
@@ -77,7 +90,7 @@
 
         <h1>Primii locuitori: Aborigenii Guanche</h1>
 
-        <p>
+        <p class="parag">
             Primii locuitori ai arhipelagului, veniți se pare din nordul Africii, undeva între anul 1000 î.e.n. și
             începutul e.n. sunt guanșii (în spaniolă, guanches). În Tenerife se pare că au ajuns după anul 500 î.e.n.
             Oricum, prima așezare cunoscută datează din jurul 200 î.e.n. Primii guanși aveau o tehnologie precară, chiar
@@ -101,7 +114,7 @@
         </p>
 
         <h1> Cucerirea spaniolă</h1>
-        <p>
+        <p class="parag">
             Cucerirea Insulelor Canare a durat aproximativ un secol, din cauza rezistenței populației și a lipsei
             resurselor economice. În prima jumătate a secolului al XV-lea, normandul Jean de Bethencourt abia a cucerit
             insulele Lanzarote, Fuerteventura și El Hierro. Ani mai târziu, monarhii catolici au cucerit Gran Canaria,
@@ -115,7 +128,7 @@
 
         <h1> Alte bătălii și emigrare în America</h1>
 
-        <p>
+        <p class="parag">
             Anii care au urmat cuceririi Tenerife au fost calmi și prosperi, până când în 1797 amiralul britanic Nelson
             a încercat să invadeze insula. Portul Santa Cruz de Tenerife era o escală obligatorie pentru navele care
             plecau spre noul continent, așa că importanța sa comercială a fost esențială.
@@ -134,7 +147,7 @@
 
         <h1>Erupții vulcanice în Tenerife</h1>
 
-        <p class="p1">
+        <p class="parag">
             Tenerife are peste trei sute de vulcani la suprafață și aproape o mie numărând craterele subacvatice. Insula
             este considerată de geologi una dintre zonele cu cea mai mare activitate vulcanică din lume.
 
@@ -152,7 +165,7 @@
 
         <h1>Tenerife din secolul al XX-lea</h1>
 
-        <p>
+        <p class="parag">
             În 1977, istoria Tenerife a fost marcată de cel mai grav accident de avion din aviația civilă. Două avioane
             s-au ciocnit pe aeroportul Tenerife Nord și 583 de persoane au murit, cel mai mare număr din istoria
             aviației.
@@ -198,23 +211,40 @@
     <div id="footer">
 
         <div class="title">
-            <h1>De asemenea te-ar putea interesa</h1>
-        </div>
-        <div id="btn">
-            <button>
-                <a href="https://en.wikipedia.org/wiki/Museum_of_the_History_of_Tenerife">Muzeul de Istorie și
-                    Antropologie din Tenerife </a>
-            </button>
+            
+            <div class="veg">
+                <h1>Exploreaza Tenerife</h1>
+                
+            <p>Descoperiți peisajul fascinant și diversitatea extraordinară a vegetației din insula Tenerife, care include păduri de laurisilva și de pini canarieni, plantații tropicale și specii rare endemice. Acest mediu natural excepțional este un adevărat spectacol al naturii, care vă va impresiona și inspira cu frumusețea și diversitatea sa. Bucurați-vă de frumusețea unică a vegetației din Tenerife și contemplați farmecul său natural izbitor!</p>
+            <p>
+                Pentru a afla mai multe informații despre flora din Tenerife și a descoperi diversitatea plantelor și florilor care împodobesc această insulă minunată, vizitati urmatorul link: 
+                <a class="button" href="https://tenerife-information-centre.com/tenerife-flora.html">Exploreaza</a>
+            </p>
+            <h3>Alatura-te comunitatii noastre pe retelele sociale! <a href=""><i class="fa-solid fa-star"></i></a> Descopera mai multe si urmareste-ne pentru actualizari exclusive si continut captivant <a href=""><i class="fa-regular fa-bell"></i></a></h3>
+                <div class="links">
+                    <a href="https://www.youtube.com/watch?v=zk3amFTzdnQ&t=30s"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/travelling_adventure_goodvibes/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/MarinVirginia1991"> <i class="fa-brands fa-facebook"></i> </a>
+                   
+                </div>
+    
+            </div>
+            <h3>Daca doresti sa explorezi mai mult , iti pun la dispozitie cateva cai fascinante:</h3>
+
+            <div class="btn">
+                <button>
+                    <a href="https://en.wikipedia.org/wiki/Museum_of_the_History_of_Tenerife">Muzeul de Istorie și
+                        Antropologie din Tenerife </a>
+                </button>
+
+                <button>
+
+                    <a href="https://www.princess-hotels.com/en/blog/top-5-historical-momuments-tenerife/">Top 5
+                        monumente istorice </a>
+                </button>
+
+            </div>
+
 
         </div>
-        <div id="btn1">
-            <button>
-
-                <a href="https://www.princess-hotels.com/en/blog/top-5-historical-momuments-tenerife/">Top 5
-                    monumente istorice </a>
-            </button>
-
-        </div>
-
-    </div>
 </body>

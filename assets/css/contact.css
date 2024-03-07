@@ -5,11 +5,33 @@ body {
   margin-left: auto;
 }
 
+.gotopbtn{
+  position: fixed;
+  bottom: 40px;
+  right: 41px;
+  z-index: 9;
+
+}
+.gotopbtn a{
+  height: 30px;
+  width: 30px;
+  display: block;
+}
+.fa-circle-arrow-up{
+  font-size: 30px;
+  color: #eda131;
+}
+
 #logo {
   float: left;
-    width: 120px;
-    border-radius: 90px;
-    margin-left: 20px;
+  width: 120px;
+  border-radius: 90px;
+  margin-left: 20px;
+}
+
+#header {
+  padding-bottom: 29px;
+  border-bottom: 1px solid #ffa50096;
 }
 
 #header>h1 {
@@ -20,25 +42,46 @@ body {
   text-align: center;
 
 }
-#header>h3>a{
+
+                                      /*Titlul animat*/
+
+@keyframes fade-in {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 3s;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+
+}
+
+#header>h3>a {
   display: inline-block;
   font-style: italic;
   color: #eda131;
   margin-top: 0px;
   cursor: pointer;
-  
+
 }
 
 
 
 
-                                        /*Stilizarea meniului*/
+/*Stilizarea meniului*/
 
 #nav {
   text-align: right;
   padding-right: 70px;
-  border-bottom-style: ridge;
-  cursor: pointer;
+
+
 }
 
 .main-menu li {
@@ -50,38 +93,86 @@ body {
 
 ul,
 li {
+  display: inline-block;
+  position: relative;
   font-style: italic;
   word-spacing: 5px;
   letter-spacing: 1px;
+
 }
 
-a {
+ul li>a {
+  display: block;
   text-decoration: none;
   color: #f8a224;
-  cursor: pointer;
+
+
 }
 
-a:hover {
-  color: #5a390ca5;
-}
-li>a {
+li>a:link,
+li>a:visited {
   text-decoration: none;
-  color: #f8a224;
- 
+  color: #a06103ce;
+  ;
 }
 
-li>a:hover{
+
+li>a:hover {
   color: #da930e85;
-}
-
-.active{
+  transition: 200ms steps(4, end), 1s ease-out font-size, 0.5s ease-in background-color;
   background-color: #e9c4a5;
   border: 1px solid #ffa50094;
-  border-radius: 34px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+li>a:active {
+  color: #f18007;
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-color: #eda131;
+  text-decoration-style: wavy;
+}
+                                       /* Stilizarea meniului derulant*/
+
+.submenu{
+  border-radius: 21px;
+  background-color: #e8e1d5;
+  border: 1px solid #ffa500ab;
+  margin-top: 10px;
+  width: 110px;
+  text-align: center;
+ 
+}
+ul li ul{
+  background-color:  #eda13157;
+  position: absolute;
+  display: none;
+  z-index: 2;
+}
+
+ul li:hover ul{
+  display: block;
+  text-align: center;
+  padding: 8px;
+}
+
+ul li ul li {
+  display: block;
 }
 
 
-                                       /*Stilizarea formularului*/
+
+.active {
+  text-decoration: underline;
+  text-decoration-color: #eda131;
+  text-decoration-style: wavy;
+}
+
+
+/*Stilizarea formularului*/
 
 .form {
   width: 430px;
@@ -118,6 +209,17 @@ textarea {
   border: 1px solid #dbdbdb;
   border-radius: 19px;
 }
+
+input[type="tel"]:hover::after{
+    content: "+40 111 222 333";
+
+}
+
+input[type="text"]:focus {
+  background:#FF9;
+  border:1px solid #FC0;
+  outline:1px dashed #7b4b02;
+  }
 
 fieldset {
   margin: 7px;
@@ -156,7 +258,8 @@ p {
 }
 
 
-h2,h3 {
+h2,
+h3 {
   text-decoration: underline;
   text-align: center;
 }
@@ -178,7 +281,7 @@ h2,h3 {
 
 }
 
-                                        /*Stilizarea elementelor din pagina */
+/*Stilizarea elementelor din pagina */
 p {
   text-indent: 31px;
   word-spacing: 5px;
@@ -190,23 +293,33 @@ p {
 
 #menu_lat {
   display: inline-block;
-  width: 958px;
+  width: 65%;
+  padding-top: 40px;
 }
 
 #section {
   float: left;
-  width: 535px;
+  width: 35%;
+  padding-top: 40px;
 }
 
 #txt>p {
-  font-size: 20px;
+  font-size: 18px;
 
 }
 
 #lista>p {
-  font-size: 20px;
+  font-size: 18px;
   border-top-style: ridge;
   padding-top: 37px;
+  padding-bottom: 10px;
+  color: #cf8503;
+  
+}
+
+#lista>ul{
+  display: flex;
+  flex-direction: column;
 }
 
 #lista>ul>li {
@@ -222,20 +335,44 @@ p {
 
 .mapa {
   clear: both;
-  width: 1427px;
-  margin: 30px 15px 30px 52px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 19px 20px;
 }
 
-.mapa>h3 {
-  padding-top: 10px;
+.map {
+  display: block;
+  padding-top: 38px;
+  padding-bottom: 30px;
   font-size: 27px;
   color: #eda131;
+  border-top: 1px solid orange;
+  margin: 76px 40px 30px 40px;
 }
 
-.mapa>p{
-  text-align: none;
+.mapa>p {
+  text-indent: 31px;
+  word-spacing: 5px;
+  line-height: 35px;
+  padding-top: 10px;
+  color: rgb(108 108 91 / 98%);
+  font-size: 20px;
+  font-style: italic;
+  flex-basis: 50%;
+  margin: 32px;
+}
+
+strong{
+  color: #e8910e;
+}
+strong>a{
+  text-decoration: none;
+  color: #e8910e;
 }
 
 iframe {
-  width: 100%;
+  width: 50%;
+  border-radius: 34px;
+  margin-right: 32px;
 }

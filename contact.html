@@ -14,32 +14,41 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../Proiect Tenerife/assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
 
-
-
-
     <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+       <!-- icon footer-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <div class="gotopbtn">
+        <a href=""><i class="fa-solid fa-circle-arrow-up"></i></a>
+    </div>
     <div id="header">
         <div id="logo">
             <img src="./assets/images/fotos/logo.jpeg" alt="Logo Tenerife" id="logo">
         </div>
-        <h1> 
+        <h1 class="fade-in"> 
             „Să vezi până departe este una, să mergi departe este alta.”
         </h1>
-        <h3><a href="https://en.wikipedia.org/wiki/Constantin_Br%C3%A2ncu%C8%99i">Constantin Brâncuși</a></h3>
+        <h3 class="fade-in"><a href="https://en.wikipedia.org/wiki/Constantin_Br%C3%A2ncu%C8%99i">Constantin Brâncuși</a></h3>
 
         <div id="nav">
             <ul class="main-menu">
-                <li><a href="acasa.html">Acasa</a></li>
-                <li ><a href="descopera.html">Descopera</a></li>
+                <li class="active"><a href="acasa.html">Acasa</a></li>
+                <li>
+                    <a href="descopera.html">Descopera</a>
+                    <ul class="submenu">
+                        <li><a href="./submeniu/plajeleidilice.html">Plajele Idilice</a></li>
+                        <li><a href="./submeniu/flora.html">Flora</a></li>
+                    </ul>
+                </li>
                 <li><a href="istoric.html">Istoric</a></li>
                 <li><a href="curiozitati.html">Curiozitati</a></li>
                 <li><a href="activitati.html">Activitati</a></li>
-                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
 
         </div>
@@ -52,7 +61,7 @@
                 <fieldset>
                     <div class="form-row">
                         <label for="nume"> Nume:</label>
-                        <input type="text" name="nume" id="nume">
+                        <input type="text" name="nume" id="nume" title="nume">
                     </div>
                 </fieldset>
                 <fieldset>
@@ -64,7 +73,7 @@
                 <fieldset>
                     <div class="form-row">
                         <label class="text" for="telefon">Telefon:</label>
-                        <input type="tel" id="telefon" name="telefon" required>
+                        <input type="tel" id="telefon" title="numarul de telefon" name="telefon" required>
                     </div>
                 </fieldset>
                 <fieldset>
@@ -131,13 +140,14 @@
         </aside>
 
     </div>
+    <h3 class="map">Harta Tenerife</h3>
     <div class="mapa">
 
-        <h3>Harta Tenerife</h3>
+        
         <p>
             Începând cu nordul insulei, se pot observa pe hartă orașele <strong><a href="https://www.guidetocanaryislands.com/things-to-do-in-puerto-de-la-cruz-tenerife/">Puerto de la Cruz </a>și <a href="https://www.spain.info/en/destination/santa-cruz-tenerife/">Santa Cruz de Tenerife </a></strong>, care sunt renumite pentru plajele spectaculoase și atmosfera animată. Aici, turiștii pot explora <strong><a href="https://clubcanary.com/ro/tenerife-blog-botanical-gardens/">Grădina Botanică </a></strong> și pot admira arhitectura colonială a clădirilor.
 
-            În partea de sud a insulei, se află zona turistică populară Playa de las Americas, unde se concentrează numeroase hoteluri, restaurante și cluburi. Plajele expansiunea Playa de las Vistas și Playa de Troya pot fi observate clar pe hartă, oferind căldură și divertisment turiștilor.
+            În partea de sud a insulei, se află zona turistică populară <strong> Playa de las Americas</strong>, unde se concentrează numeroase hoteluri, restaurante și cluburi. Plajele expansiunea <strong>Playa de las Vistas și Playa de Troya</strong> pot fi observate clar pe hartă, oferind căldură și divertisment turiștilor.
         </p>
 
         <iframe
