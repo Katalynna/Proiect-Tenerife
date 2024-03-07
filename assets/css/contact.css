@@ -1,0 +1,378 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e8e1d5;
+  width: 1513px;
+  margin-left: auto;
+}
+
+.gotopbtn{
+  position: fixed;
+  bottom: 40px;
+  right: 41px;
+  z-index: 9;
+
+}
+.gotopbtn a{
+  height: 30px;
+  width: 30px;
+  display: block;
+}
+.fa-circle-arrow-up{
+  font-size: 30px;
+  color: #eda131;
+}
+
+#logo {
+  float: left;
+  width: 120px;
+  border-radius: 90px;
+  margin-left: 20px;
+}
+
+#header {
+  padding-bottom: 29px;
+  border-bottom: 1px solid #ffa50096;
+}
+
+#header>h1 {
+  font-style: italic;
+  color: #eda131;
+  font-size: 32px;
+  margin: 20px 174px 0px 20px;
+  text-align: center;
+
+}
+
+                                      /*Titlul animat*/
+
+@keyframes fade-in {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 3s;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+
+}
+
+#header>h3>a {
+  display: inline-block;
+  font-style: italic;
+  color: #eda131;
+  margin-top: 0px;
+  cursor: pointer;
+
+}
+
+
+
+
+/*Stilizarea meniului*/
+
+#nav {
+  text-align: right;
+  padding-right: 70px;
+
+
+}
+
+.main-menu li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+
+}
+
+ul,
+li {
+  display: inline-block;
+  position: relative;
+  font-style: italic;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+
+}
+
+ul li>a {
+  display: block;
+  text-decoration: none;
+  color: #f8a224;
+
+
+}
+
+li>a:link,
+li>a:visited {
+  text-decoration: none;
+  color: #a06103ce;
+  ;
+}
+
+
+li>a:hover {
+  color: #da930e85;
+  transition: 200ms steps(4, end), 1s ease-out font-size, 0.5s ease-in background-color;
+  background-color: #e9c4a5;
+  border: 1px solid #ffa50094;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+li>a:active {
+  color: #f18007;
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-color: #eda131;
+  text-decoration-style: wavy;
+}
+                                       /* Stilizarea meniului derulant*/
+
+.submenu{
+  border-radius: 21px;
+  background-color: #e8e1d5;
+  border: 1px solid #ffa500ab;
+  margin-top: 10px;
+  width: 110px;
+  text-align: center;
+ 
+}
+ul li ul{
+  background-color:  #eda13157;
+  position: absolute;
+  display: none;
+  z-index: 2;
+}
+
+ul li:hover ul{
+  display: block;
+  text-align: center;
+  padding: 8px;
+}
+
+ul li ul li {
+  display: block;
+}
+
+
+
+.active {
+  text-decoration: underline;
+  text-decoration-color: #eda131;
+  text-decoration-style: wavy;
+}
+
+
+/*Stilizarea formularului*/
+
+.form {
+  width: 430px;
+  margin: 11px 0px 0px 50px;
+  padding-top: 1px;
+  font: bold 14px sans-serif;
+  text-align: center;
+  background-color: #f8a2248a;
+  border-radius: 35px;
+  font-family: serif;
+  color: rgb(108 106 102);
+  font-style: italic;
+  font-size: 16px;
+
+}
+
+.form-row {
+  text-align: left;
+}
+
+label {
+  display: inline-block;
+  width: 124px;
+}
+
+input,
+select,
+textarea {
+  color: #5f5f5f;
+  box-sizing: border-box;
+  width: 230px;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  padding: 12px 18px;
+  border: 1px solid #dbdbdb;
+  border-radius: 19px;
+}
+
+input[type="tel"]:hover::after{
+    content: "+40 111 222 333";
+
+}
+
+input[type="text"]:focus {
+  background:#FF9;
+  border:1px solid #FC0;
+  outline:1px dashed #7b4b02;
+  }
+
+fieldset {
+  margin: 7px;
+  width: 418px;
+  border: none;
+}
+
+.btn {
+  border-radius: 10px;
+  background-color: #f8a22491;
+  font-weight: inherit;
+  margin: 10px 0px 6px 0px;
+  padding-bottom: 10px;
+
+}
+
+.info {
+  margin-top: 10px;
+  border-top: 1px ridge #9a8a8a9c;
+  padding-bottom: 10px;
+
+
+}
+
+.info,
+h2,
+p {
+  font-family: serif;
+  text-align: left;
+
+}
+
+.info>h2 {
+  color: #eda131;
+  ;
+}
+
+
+h2,
+h3 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.icon {
+  display: inline-block;
+  margin: 0px 10px 0px 16px;
+  width: 32px;
+  height: 37px;
+  background: url(../images/fotos/icons8-google-maps-48.png) center/contain no-repeat;
+}
+
+.email {
+  display: inline-block;
+  margin: 0px 22px 0px 16px;
+  width: 31px;
+  height: 27px;
+  background: url(../images/fotos/icons8-email-64.png) center/contain no-repeat;
+
+}
+
+/*Stilizarea elementelor din pagina */
+p {
+  text-indent: 31px;
+  word-spacing: 5px;
+  line-height: 32px;
+  padding-top: 10px;
+  color: rgb(108 108 91 / 98%);
+
+}
+
+#menu_lat {
+  display: inline-block;
+  width: 65%;
+  padding-top: 40px;
+}
+
+#section {
+  float: left;
+  width: 35%;
+  padding-top: 40px;
+}
+
+#txt>p {
+  font-size: 18px;
+
+}
+
+#lista>p {
+  font-size: 18px;
+  border-top-style: ridge;
+  padding-top: 37px;
+  padding-bottom: 10px;
+  color: #cf8503;
+  
+}
+
+#lista>ul{
+  display: flex;
+  flex-direction: column;
+}
+
+#lista>ul>li {
+  list-style-type: disclosure-closed;
+  font-style: italic;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  line-height: 28px;
+  margin-left: 42px;
+  padding-bottom: 10px;
+
+}
+
+.mapa {
+  clear: both;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 19px 20px;
+}
+
+.map {
+  display: block;
+  padding-top: 38px;
+  padding-bottom: 30px;
+  font-size: 27px;
+  color: #eda131;
+  border-top: 1px solid orange;
+  margin: 76px 40px 30px 40px;
+}
+
+.mapa>p {
+  text-indent: 31px;
+  word-spacing: 5px;
+  line-height: 35px;
+  padding-top: 10px;
+  color: rgb(108 108 91 / 98%);
+  font-size: 20px;
+  font-style: italic;
+  flex-basis: 50%;
+  margin: 32px;
+}
+
+strong{
+  color: #e8910e;
+}
+strong>a{
+  text-decoration: none;
+  color: #e8910e;
+}
+
+iframe {
+  width: 50%;
+  border-radius: 34px;
+  margin-right: 32px;
+}
